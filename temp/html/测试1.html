@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- Vue.js + ElementUI + Echart -->
+<html>
+    <head>
+        <title>测试demo</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+        
+    </head>
+    <body>
+        <div id="content" style="background-image: url(../image/底图.png); background-size: cover; width: 2890px;
+         height: 1083px; margin: -10px -10px; padding: 100px 0px 0px 50px;">
+            <div>
+                <el-row>
+                    <el-col :span="3"><div style="background-color: white;"><iframe name="weather_inc" 
+                        src="http://i.tianqi.com/index.php?c=code&id=7" 
+                        style="border:solid 1px #7ec8ea" 
+                        width="220" height="90" frameborder="0" 
+                        marginwidth="0" marginheight="0" scrolling="no">
+                    </iframe></div></el-col>
+                    <!-- <el-col :span="5" :offset="7"><div id="title" style="background-color: aqua;">
+                        新泰智能监控平台
+                    </div></el-col> -->
+                </el-row>
+                <el-row>
+                    <el-col :span="7"><div style="width: 100%; height: 700px; background-color: blueviolet;">
+                        <table style="width: 100%;">
+                            <tr>
+                                <td>项目名称</td>
+                                <td>测试</td>
+                                <td>日志状态</td>
+                                <td>施工中</td>
+                            </tr>
+                            <tr>
+                                <td>分包单位</td>
+                                <td>科大智能</td>
+                                <td>收工时间</td>
+                                <td>2020年11月18日</td>
+                            </tr>
+                            <tr>
+                                <td>施工地址</td>
+                                <td>闵行区</td>
+                                <td>持票类型</td>
+                                <td>A票；B票</td>
+                            </tr>
+                            <tr>
+                                <td>是否驻点</td>
+                                <td>是</td>
+                                <td>任务类型</td>
+                                <td>第一作业票</td>
+                            </tr>
+                            <tr>
+                                <td>现场工作负责人</td>
+                                <td>胡元吉</td>
+                                <td>风险等级</td>
+                                <td>二级</td>
+                            </tr>
+                            <tr>
+                                <td>现场作业人数</td>
+                                <td>3</td>
+                                <td>关联摄像头</td>
+                                <td>施工中</td>
+                            </tr>
+                        </table>
+                        <el-divider></el-divider>
+                        <table>
+                            <th></th>
+                        </table>
+                    </div></el-col>
+                    <el-col :span="8" :offset="1"><div style="width: 100%; height: 700px; background-color: darkgreen;"></div></el-col>
+                    <el-col :span="7" :offset="1"><div style="width: 100%; height: 700px; background-color: darkorange;"></div></el-col>
+                </el-row>
+            </div>
+        </div>
+        <style>
+            #content {
+                overflow: hidden;
+            }
+            #title{
+                font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+                font-size: 20px;
+            }
+            .el-row{
+                margin-bottom: 50px;
+            }
+        </style>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+        <script type="text/javascript">
+            new Vue({
+                el: '#content'
+            })
+        </script>
+    </body>
+</html>
